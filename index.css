@@ -417,7 +417,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/trees.jpeg');
+        url('./images/desert.jpeg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -538,12 +538,16 @@ body:not(.user-is-tabbing) a:focus {
 .client__logos {
     display: flex;
     justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
+}
+
+
+.client__logos_box {
+    text-align: center;
 }
 
 .client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
+    height: 100px;
+    max-width: 100px;
 }
 
 @media(max-width: 1240px) {
@@ -561,38 +565,52 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- About ----- */
 /* --------------------------------------- */
 
+img {
+    border-radius: 25%;
+  }
+
 .about__content {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 50px;
+
+
 }
 
 @media(max-width: 900px) {
     .about__content {
         flex-direction: column-reverse;
         align-items: initial;
+    
     }
 }
 
 .about__photo_bw {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+
+
 }
 
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
+
+
 }
 
 
 @media(min-width: 901px) {
     .about__text {
         flex: 0 0 50%;
+    
+
     }
     
     .about__photo-container {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
+    
     }
 }
 
