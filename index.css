@@ -80,6 +80,7 @@ body {
 .row {
     max-width: var(--container-max-width);
     margin: 0 auto;
+    
 }
 
 @media(max-width: 1340px) {
@@ -564,6 +565,7 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 @media(max-width: 900px) {
